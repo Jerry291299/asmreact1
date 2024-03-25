@@ -44,8 +44,8 @@ function App() {
     <div className='container mx-auto px-4'>
     <Header/>
     <Banner/>
-    <About/>
-    <Products products={products}/>
+    {/* <About/>
+    <Products products={products}/> */}
     </div>
     </>
     );

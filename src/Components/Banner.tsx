@@ -1,42 +1,27 @@
 import React from 'react'
-
+import ban from './img/Image.jpg'
 type Props = {}
 
 const Banner = (props: Props) => {
   return (
     <>
-    <div className='relative pt-[50px]'>
-        
-            <img className='w-full' src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/4251140_Onsite_SS_24_ORTUS_PART_2_YEEZY_SEA_15_MAR_Masthead_DT_2880x1280_D_37ed0a4db9.jpg" alt="" />
-        
-
-        <div className='text absolute bottom-[80px] left-0 pl-[20px] w-1/2'>
-            <h1 className='font-bold text-[45px] pl-[10px]'>
-                Revamp Your Wardrobe with Our <br/> 
-                Stylish Collection
-            </h1>
-
-            <h2 className='px-[20px] pt-[40px] text-[28px]'>
-            When style blends seamlessly with performance, you get these adidas shoes. Designed to keep you cool and comfortable on the go, they fuse a sock-like mesh upper that's hugged by a bio-based foam cage. The result is an ultra-breathable, lightweight shoe that moves with your every step. It's a fresh take on a running shoe with a fast look and plenty of comfort.
-
-            </h2>
-
-            <div className='buttonshopnow pl-[50px] mt-[60px] text-[20px]'>
-                <button className='box-border rounded-full bg-black text-white border-white h-14 w-40 border-2 mr-[10px]'>Shop now</button>
-                <button className='box-border rounded-full bg-black text-white border-white h-14 w-40 border-2'>Button</button>
+        <div className='flex w-[1400px] gap-4 pt-[130px]'>
+          <div className='text1 w-[750px]'>
+            <p className='text-5xl'>Transform Your Home with Our Stunning</p>
+            <p className='pt-[15px] font-bold text-5xl'>Furniture Collection</p>
+          </div>
+          <div className='text2 w-[650px]'>
+            <p className='text-lg'>Welcome to our furniture store, where we believe that a well-furnished home is a happy home. We offer a wide selection of high-quality furniture for every room in your home, from cozy sofas and elegant dining sets to stylish office desks and comfortable beds.</p>
+            <div className='nút text-lg flex gap-5 pt-[30px]'>
+              <button className='border-2 border-black bg-black text-white py-[10px] px-[20px] rounded-xl'>Shop now</button>
+              <button className='border-2 border-black py-[10px] px-[20px] rounded-xl'>Learn More</button>
             </div>
+          </div>
         </div>
 
-
-
-
-
-
-
-
-
-    </div>
-    
+        <div className="bannerimg pt-[70px]">
+          <img className='w-full' src={ban} alt="" />
+        </div>
     </>
   )
 }

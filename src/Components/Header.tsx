@@ -1,241 +1,114 @@
 import React from 'react'
-
+import Facebook from './img/Facebook.png'
+import Global from './img/global.png'
+import heart from './img/heart.png'
+import image from './img/Image.jpg'
+import noti from './img/notification.png'
+import shoppingcard from './img/shopping-cart.png'
+import insta from './img/Instagram.png'
+import link from './img/LinkedIn.png'
+import twitter from './img/Twitter.png'
+import nguoi from './img/user.png'
+import logo from './img/Ddsgnr Library.png'
 type Props = {}
 
 const Header = (props: Props) => {
   return (
 
     <>
-    <div className='container '>
-    <nav className="bg-white pt-[20px]">
-  <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div className="relative flex h-16 items-center justify-between">
-      <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-        {/* Mobile menu button*/}
-        <button
-          type="button"
-          className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-          aria-controls="mobile-menu"
-          aria-expanded="false"
-        >
-          <span className="absolute -inset-0.5" />
-          <span className="sr-only">Open main menu</span>
-          {/*
-      Icon when menu is closed.
-
-      Menu open: "hidden", Menu closed: "block"
-    */}
-          <svg
-            className="block h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
-          {/*
-      Icon when menu is open.
-
-      Menu open: "block", Menu closed: "hidden"
-    */}
-          <svg
-            className="hidden h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-      </div>
-      <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        <div className="flex flex-shrink-0 items-center">
-          <img
-            className="h-8 w-full scale-[300%] mr-[200px]"
-            src="https://logowik.com/content/uploads/images/adidas-new-20225326.jpg"
-            alt="Your Company"
-          />
+    <div className='HeaderContainer w-[1400px]'>
+      <div className='up py-[15px] flex justify-between font-medium'>
+        <div className='trái flex'>
+          <p className='border-r-2 border-black px-[20px]'>Phone Number: 956 742 455 678</p>
+          <p className='px-[20px]'>Email:info@ddsgnr.com</p>
         </div>
-        <div className="hidden sm:ml-6 sm:block">
-          <div className="flex space-x-4">
-            {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-            <a
-              href="#"
-              className="bg-gray-900 text-white rounded-md px-3 py-2 text-md font-medium"
-              aria-current="page"
-            >
-              Home
-            </a>
-            <a
-              href="#"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-md font-medium"
-            >
-              About us
-            </a>
-            <a
-              href="#"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-md font-medium"
-            >
-              Products-list
-            </a>
-            <a
-              href="#"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-md font-medium"
-            >
-              Service
-            </a>
-            <a
-              href="#"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-md font-medium"
-            >
-              Contact
-            </a>
 
-            <form className="form-inline my-2 my-lg-0">
-      <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button className="border-box border-2 px-[15px] py-[5px] rounded-lg border-gray-500" type="submit">Search</button>
-    </form>
+        <div className='phải flex gap-3'>
+          <div className='icon flex pr-[150px] gap-4'>
+            <img src= {Facebook} alt=""/>
+            <img src={insta} alt=""/>
+            <img src={twitter} alt=""/>
+            <img src={link} alt=""/>
+          </div>
+
+          <div className='flex'>
+          <img className='scale-[0.9] pr-[10px]' src={Global} alt=""/>
+          <p>English</p>
+          </div>
+
+          <div className='flex'>
+          <img className='scale-[0.9] pl-[30px] pr-[10px]' src={nguoi} alt=""/>
+          <p>Sign in</p>
           </div>
         </div>
-      </div>
-      <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-        <button
-          type="button"
-          className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-        >
-          <span className="absolute -inset-1.5" />
-          <span className="sr-only">View notifications</span>
-          <svg
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
-            />
-          </svg>
-        </button>
-        {/* Profile dropdown */}
-        <div className="relative ml-3">
-          <div>
-            <button
-              type="button"
-              className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-              id="user-menu-button"
-              aria-expanded="false"
-              aria-haspopup="true"
-            >
-              <span className="absolute -inset-1.5" />
-              <span className="sr-only">Open user menu</span>
-              <img
-                className="h-8 w-8 rounded-full"
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt=""
-              />
-            </button>
-          </div>
-          {/*
-      Dropdown menu, show/hide based on menu state.
-
-      Entering: "transition ease-out duration-100"
-        From: "transform opacity-0 scale-95"
-        To: "transform opacity-100 scale-100"
-      Leaving: "transition ease-in duration-75"
-        From: "transform opacity-100 scale-100"
-        To: "transform opacity-0 scale-95"
-    */}
-          {/* <div
-            className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-            role="menu"
-            aria-orientation="vertical"
-            aria-labelledby="user-menu-button"
-            tabIndex={-1}
-          > */}
-            {/* Active: "bg-gray-100", Not Active: "" */}
-            {/* <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700"
-              role="menuitem"
-              tabIndex={-1}
-              id="user-menu-item-0"
-            >
-              Your Profile
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700"
-              role="menuitem"
-              tabIndex={-1}
-              id="user-menu-item-1"
-            >
-              Settings
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700"
-              role="menuitem"
-              tabIndex={-1}
-              id="user-menu-item-2"
-            >
-              Sign out
-            </a> */}
-          {/* </div> */}
         </div>
-      </div>
-    </div>
-  </div>
-  {/* Mobile menu, show/hide based on menu state. */}
-  <div className="sm:hidden" id="mobile-menu">
-    <div className="space-y-1 px-2 pb-3 pt-2">
-      {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-      <a
-        href="#"
-        className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
-        aria-current="page"
-      >
-        Dashboard
-      </a>
-      <a
-        href="#"
-        className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-      >
-        Team
-      </a>
-      <a
-        href="#"
-        className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-      >
-        Projects
-      </a>
-      <a
-        href="#"
-        className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-      >
-        Calendar
-      </a>
-    </div>
-  </div>
-</nav>
 
-    
+
+
+
+      <div className='down flex justify-between border-y-2 py-[12px] border-black'>
+        <img src={logo} alt=""/>
+        <div className='right flex'>
+          <div className="text flex gap-14 pt-[7px] text-lg">
+            <p className='hover:border-b-2 border-black'>Home</p>
+            <p className='hover:border-b-2 border-black'>Products</p>
+            <p className='hover:border-b-2 border-black'>About Us</p>
+            <p className='hover:border-b-2 border-black'>Contact</p>
+          </div>
+
+
+
+
+          <div className="search px-[30px]">
+          <div className="relative">
+  <input
+    type="text"
+    className="p-2 pl-8 rounded border border-gray-200 bg-gray-200 focus:bg-white focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-transparent"
+    placeholder="search..."
+  />
+  <svg
+    className="w-4 h-4 absolute right-[10px] top-3.5"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+    />
+  </svg>
 </div>
+
+          </div>
+
+          <div className="icon2 flex gap-10">
+            <div className=''>
+              <img className='pl-[15px]' src={heart} alt="" />
+              <p>Wishlist</p>
+            </div>
+            <div className=''>
+              <img className='pl-[3px]' src={shoppingcard} alt="" />
+              <p>Cart</p>
+            </div>
+            <div className=''>
+               <img className='pl-[25px]' src={noti} alt="" />
+               <p>Notification</p>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+
+
+
+    </div>
     </>
 
 

@@ -7,7 +7,7 @@ const About = (props: Props) => {
     <>
     <div className='pt-[60px]'>
     <div className=' bg-gray-100 grid grid-cols-2'>
-        <div className='text'>
+        <div className='text px-[10px]'>
             <p className='py-[10px] font-semibold '>About Us</p>
             <h1 className='font-bold text-[35px]'>About The Shop</h1>
             <p className='py-[20px] text-[19px]'>KNOW THE CARBON FOOTPRINT:
