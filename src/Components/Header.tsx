@@ -16,7 +16,7 @@ const Header = (props: Props) => {
   return (
 
     <>
-    <div className='HeaderContainer w-[1400px]'>
+    <div className='HeaderContainer mx-auto '>
       <div className='up py-[15px] flex justify-between font-medium'>
         <div className='trái flex'>
           <p className='border-r-2 border-black px-[20px]'>Phone Number: 956 742 455 678</p>

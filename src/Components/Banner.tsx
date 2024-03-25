@@ -5,7 +5,7 @@ type Props = {}
 const Banner = (props: Props) => {
   return (
     <>
-        <div className='flex w-[1400px] gap-4 pt-[130px]'>
+        <div className='flex mx-auto gap-4 pt-[130px]'>
           <div className='text1 w-[750px]'>
             <p className='text-5xl'>Transform Your Home with Our Stunning</p>
             <p className='pt-[15px] font-bold text-5xl'>Furniture Collection</p>

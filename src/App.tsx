@@ -6,6 +6,8 @@ import Banner from './Components/Banner';
 import About from './Components/About';
 import Products from './Components/Products';
 import { Iproduct } from './interface/Product';
+import Productlist from './Components/productslist';
+import Footer from './Components/Footer';
 function App() {
   const products: Iproduct[]=[
     {
@@ -41,9 +43,11 @@ function App() {
   
   return (
     <>
-    <div className='container mx-auto px-4'>
+    <div className='container mx-auto w-[1440px] px-4'>
     <Header/>
     <Banner/>
+    <Productlist/>
+    <Footer/>
     {/* <About/>
     <Products products={products}/> */}
     </div>
